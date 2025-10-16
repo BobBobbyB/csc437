@@ -79,8 +79,8 @@ footer {
 
 svg.icon {
     display: inline-block;
-    width: 100px;     
-    height: 100px;    
+    width: 75px !important;     
+    height: 75px !important;    
     vertical-align: middle;
     fill: currentColor;
     margin-right: 0.5em;
