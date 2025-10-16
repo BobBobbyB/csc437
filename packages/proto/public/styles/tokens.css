@@ -13,8 +13,9 @@
     --color-header-text: var(--color-accent);
   
     /* typography */
-    --font-body: Arial, Helvetica, sans-serif;
-    --font-heading: 'Trebuchet MS', Helvetica, sans-serif;
+    --font-body: 'Roboto', Helvetica, Arial, sans-serif;
+    --font-heading: 'Oswald', 'Trebuchet MS', Helvetica, sans-serif;
+    --font-mono: 'Courier New', monospace;
   
     /* spacing and borders */
     --spacing-unit: 1rem;
