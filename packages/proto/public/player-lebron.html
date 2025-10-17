@@ -2,24 +2,141 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>LeBron James</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeBron James - NBA Domain</title>
+  <meta name="description" content="LeBron James player profile and statistics">
   
-  <link rel="stylesheet" href="/styles/tokens.css" />
-  <link rel="stylesheet" href="/styles/page.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./styles/page.css?v=1">
 </head>
 <body>
-  <h1>LeBron James</h1>
-  <p>Position: Forward</p>
-  <p>Team: <a href="team.html">Los Angeles Lakers</a></p>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="assets/basketball.svg" alt="Basketball">
+        <h1>NBA DOMAIN</h1>
+      </a>
+      
+      <ul>
+        <li><a href="players.html">Players</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="games.html">Games</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h2>Stats</h2>
-  <a href="stat-lebron.html">See Stats</a>
-  <!-- <footer>
-    <p>© 2025 NBA Teams Project</p>
-    <svg class="corner-icon" viewBox="-5 -10 110 135">
-      <use xlink:href="/icons/ball.svg#icon-ball"></use>
-    </svg>
-  </footer> -->
+  <main>
+    <a href="players.html" class="btn btn-back">← Back to Players</a>
+
+    <header class="detail-header">
+      <h1 class="detail-title">LEBRON JAMES</h1>
+      <p class="detail-subtitle"><a href="team-lakers.html">Los Angeles Lakers</a></p>
+    </header>
+
+    <section class="grid grid-3" style="margin-bottom: 2rem;">
+      <article class="card">
+        <header class="card-header">
+          <h3>INFO</h3>
+        </header>
+        <ul class="info-list">
+          <li><span class="info-label">Position:</span> <span class="info-value">Forward</span></li>
+          <li><span class="info-label">Number:</span> <span class="info-value">#23</span></li>
+          <li><span class="info-label">Height:</span> <span class="info-value">6'9"</span></li>
+          <li><span class="info-label">Weight:</span> <span class="info-value">250 lbs</span></li>
+          <li><span class="info-label">Age:</span> <span class="info-value">39</span></li>
+        </ul>
+      </article>
+
+      <article class="card" style="grid-column: span 2;">
+        <header class="card-header">
+          <h3>SEASON STATS</h3>
+        </header>
+        <div class="stats-grid" style="grid-template-columns: repeat(5, 1fr);">
+          <div class="stat-item">
+            <span class="stat-value" style="font-size: 2.5rem;">25.7</span>
+            <span class="stat-label">PPG</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" style="font-size: 2.5rem;">7.3</span>
+            <span class="stat-label">RPG</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" style="font-size: 2.5rem;">7.5</span>
+            <span class="stat-label">APG</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" style="font-size: 2.5rem;">54.2%</span>
+            <span class="stat-label">FG%</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" style="font-size: 2.5rem;">75.0%</span>
+            <span class="stat-label">FT%</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <article class="card">
+        <header class="card-header">
+          <h3>RECENT GAMES</h3>
+        </header>
+        
+        <a href="game-1.html">
+          <div class="game-card">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <div style="font-weight: 600;">vs Warriors</div>
+                <div style="font-size: 0.875rem; color: var(--muted-foreground);">Jan 15, 2024</div>
+              </div>
+              <div style="display: flex; gap: 2rem; text-align: center;">
+                <div>
+                  <div class="stat-value" style="font-size: 1.25rem;">28</div>
+                  <div class="stat-label">PTS</div>
+                </div>
+                <div>
+                  <div style="font-family: var(--font-display); font-size: 1.25rem;">8</div>
+                  <div class="stat-label">REB</div>
+                </div>
+                <div>
+                  <div style="font-family: var(--font-display); font-size: 1.25rem;">10</div>
+                  <div class="stat-label">AST</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="game-2.html">
+          <div class="game-card">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <div style="font-weight: 600;">@ Suns</div>
+                <div style="font-size: 0.875rem; color: var(--muted-foreground);">Jan 12, 2024</div>
+              </div>
+              <div style="display: flex; gap: 2rem; text-align: center;">
+                <div>
+                  <div class="stat-value" style="font-size: 1.25rem;">32</div>
+                  <div class="stat-label">PTS</div>
+                </div>
+                <div>
+                  <div style="font-family: var(--font-display); font-size: 1.25rem;">6</div>
+                  <div class="stat-label">REB</div>
+                </div>
+                <div>
+                  <div style="font-family: var(--font-display); font-size: 1.25rem;">8</div>
+                  <div class="stat-label">AST</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </article>
+    </section>
+  </main>
 </body>
 </html>
-

@@ -138,3 +138,50 @@
     nav ul { flex-wrap: wrap; justify-content: center; }
   }
   
+  /* === game-1 cards === */
+  .btn-back {
+    background: transparent;
+    color: var(--foreground);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 0;
+  }
+  .btn-back:hover { color: var(--primary); }
+  
+  .game-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    transition: all .3s ease;
+  }
+  .card > a { display: block; color: inherit; }
+  .game-card:hover {
+    background-color: var(--court-blue);
+    border-color: var(--primary);
+    box-shadow: 0 0 30px hsla(25,95%,53%,.25);
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--spacing-sm);
+    text-align: center;
+  }
+  .stat-item { padding: var(--spacing-xs); }
+  .stat-value {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--primary);
+    display: block;
+  }
+  .stat-label {
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+    text-transform: uppercase;
+  }
+  

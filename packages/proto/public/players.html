@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NBA Players - NBA Domain</title>
+  <meta name="description" content="Browse NBA players and their statistics">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./styles/page.css?v=1">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="assets/basketball.svg" alt="Basketball">
+        <h1>NBA DOMAIN</h1>
+      </a>
+      
+      <ul>
+        <li><a href="players.html">Players</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="games.html">Games</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header>
+      <h1>PLAYERS</h1>
+      <p style="color: var(--muted-foreground); font-size: 1.125rem;">Browse NBA players and their statistics</p>
+    </header>
+
+    <section class="grid grid-3">
+      <a href="player-lebron.html">
+        <article class="card">
+          <header class="card-header">
+            <h3 class="card-title">LeBron James</h3>
+            <p class="card-subtitle">#23 • Forward</p>
+          </header>
+          <p class="card-accent">Los Angeles Lakers</p>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-value">25.7</span>
+              <span class="stat-label">PPG</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">7.3</span>
+              <span class="stat-label">RPG</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">7.5</span>
+              <span class="stat-label">APG</span>
+            </div>
+          </div>
+        </article>
+      </a>
+
+      <a href="player-curry.html">
+        <article class="card">
+          <header class="card-header">
+            <h3 class="card-title">Stephen Curry</h3>
+            <p class="card-subtitle">#30 • Guard</p>
+          </header>
+          <p class="card-accent">Golden State Warriors</p>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-value">29.4</span>
+              <span class="stat-label">PPG</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">5.1</span>
+              <span class="stat-label">RPG</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">6.3</span>
+              <span class="stat-label">APG</span>
+            </div>
+          </div>
+        </article>
+      </a>
+
+      <a href="player-durant.html">
+        <article class="card">
+          <header class="card-header">
+            <h3 class="card-title">Kevin Durant</h3>
+            <p class="card-subtitle">#35 • Forward</p>
+          </header>
+          <p class="card-accent">Phoenix Suns</p>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-value">27.1</span>
+              <span class="stat-label">PPG</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">6.7</span>
+              <span class="stat-label">RPG</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">5.0</span>
+              <span class="stat-label">APG</span>
+            </div>
+          </div>
+        </article>
+      </a>
+    </section>
+  </main>
+</body>
+</html>
