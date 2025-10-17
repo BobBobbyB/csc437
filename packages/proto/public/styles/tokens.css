@@ -1,25 +1,58 @@
-/* tokens.css */
-/* Global design tokens for the NBA site */
+/* styles/tokens.css */
 
 :root {
-    --color-background: #0b0b0b;             /* page background (dark) */
-    --color-text: #f0f0f0;                   /* main text color (light) */
+    --brand-primary: hsl(25, 95%, 53%);  /* orange */
+    --brand-accent:  hsl(15, 90%, 55%);  /* orange rose accent */
+    --brand-blue:    hsl(240, 45%, 25%); /* court blue */
   
-    --color-accent: #FDB927;                 /* Lakers gold accent */
-    --color-accent-dark: #552583;            /* Lakers purple */
-    --color-accent-hover: #ffffff;           /* hover color for links */
-  
-    --color-header-background: var(--color-accent-dark);
-    --color-header-text: var(--color-accent);
+    /* neutral scale */
+    --neutral-900: hsl(220, 25%, 10%);  /* page background */
+    --neutral-800: hsl(220, 20%, 14%);  /* card background */
+    --neutral-600: hsl(220, 15%, 25%);  /* borders */
+    --neutral-500: hsl(220, 15%, 20%);  /* muted bg */
+    --neutral-300: hsl(0, 0%, 70%);     /* muted fg */
+    --neutral-50:  hsl(0, 0%, 98%);     /* foreground text */
   
     /* typography */
-    --font-body: 'Roboto', Helvetica, Arial, sans-serif;
-    --font-heading: 'Oswald', 'Trebuchet MS', Helvetica, sans-serif;
-    --font-mono: 'Courier New', monospace;
+    --font-heading: 'Bebas Neue', 'Impact', sans-serif;
+    --font-body:    'Inter', 'system-ui', sans-serif;
   
-    /* spacing and borders */
-    --spacing-unit: 1rem;
-    --border-thickness: 4px;
-    --border-color: var(--color-accent);
+    /* spacing scale */
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-4: 2rem;
+    --space-5: 3rem;
+  
+    /* shape */
+    --radius-md: 0.75rem;
+  }
+  
+  :root {
+    /* colors */
+    --background: var(--neutral-900);
+    --foreground: var(--neutral-50);
+    --card-bg:    var(--neutral-800);
+    --border:     var(--neutral-600);
+    --muted:      var(--neutral-500);
+    --muted-foreground: var(--neutral-300);
+  
+    --primary: var(--brand-primary);
+    --accent:  var(--brand-accent);
+    --court-blue: var(--brand-blue);
+  
+    /* type */
+    --font-display: var(--font-heading);
+    --font-body:    var(--font-body);
+  
+    /* spacing */
+    --spacing-xs: var(--space-1);
+    --spacing-sm: var(--space-2);
+    --spacing-md: var(--space-3);
+    --spacing-lg: var(--space-4);
+    --spacing-xl: var(--space-5);
+  
+    /* radius */
+    --radius: var(--radius-md);
   }
   
