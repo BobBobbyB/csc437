@@ -4,40 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NBA Teams</title>
-  
-    <!-- web fonts -->
+    
+    <!-- Web fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-  
-    <!-- existing CSS -->
+    
+    <!-- Existing CSS links -->
     <link rel="stylesheet" href="/styles/tokens.css" />
-    <link rel="stylesheet" href="/styles/page.css" />
-  </head>  
+    <link rel="stylesheet" href="/styles/page.css" />  <!-- Using the updated CSS I provided earlier -->
+  </head>
 
   <body>
     <header>
-      <svg class="icon" width="100" height="100">
-        <use xlink:href="icons/basketball.svg#icon-basketball"></use>
-      </svg>             
-      <h1>NBA Teams</h1>
+      <!-- Reverted SVG to original format for compatibility -->
+      <nav>
+        <a href="index.html" class="logo">
+          <svg class="icon" width="75" height="75">  <!-- Adjusted size based on CSS -->
+            <use xlink:href="icons/basketball.svg#icon-basketball"></use>
+          </svg>
+          <h1>NBA Teams</h1>
+        </a>
+        
+        <ul>
+          <li><a href="team.html">Teams</a></li>
+          <li><a href="players.html">Players</a></li>  <!-- Added from second file -->
+          <li><a href="schedule.html">Schedule</a></li>  <!-- Added from second file -->
+          <li><a href="games.html">Games</a></li>  <!-- Added from second file -->
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <ul>
-        <li><a href="team.html">Los Angeles Lakers</a></li>
-        <li><a href="team-celtics.html">Boston Celtics</a></li>
-      </ul>
-    </main>
+      <!-- Hero section from second file, adapted -->
+      <section class="hero">
+        <img src="icons/basketball.svg" alt="Basketball" />  <!-- Keeping as <img> for hero; check path -->
+        <h1>NBA Teams</h1>
+        <p>Explore comprehensive NBA data including teams, players, schedules, games, and detailed statistics.</p>
+        <div class="hero-buttons">
+          <a href="team.html" class="btn btn-primary">VIEW TEAMS</a>
+          <a href="players.html" class="btn btn-outline">VIEW PLAYERS</a>  <!-- Added from second file -->
+          <a href="schedule.html" class="btn btn-outline">VIEW SCHEDULE</a>  <!-- Added from second file -->
+        </div>
+      </section>
 
-    <!-- <footer>
-      <p>© 2025 NBA Teams Project</p>
-      <svg class="corner-icon">
-        <use xlink:href="/icons/ball.svg#icon-ball"></use>
-      </svg>       -->
-    <!-- </footer> -->
+      <!-- Explore section with grid of cards from second file -->
+      <section>
+        <h2>EXPLORE THE DOMAIN</h2>
+        
+        <div class="grid grid-4">
+          <a href="players.html">
+            <article class="card">
+              <header class="card-header">
+                <h3 class="card-title">PLAYERS</h3>
+              </header>
+              <p class="card-subtitle">
+                Browse NBA players, view their stats, and explore their performance across games.
+              </p>
+            </article>
+          </a>
+
+          <a href="team.html">
+            <article class="card">
+              <header class="card-header">
+                <h3 class="card-title">TEAMS</h3>
+              </header>
+              <p class="card-subtitle">
+                Explore team rosters, records, and follow their schedules throughout the season.
+              </p>
+            </article>
+          </a>
+
+          <a href="schedule.html">
+            <article class="card">
+              <header class="card-header">
+                <h3 class="card-title">SCHEDULE</h3>
+              </header>
+              <p class="card-subtitle">
+                View upcoming games and past results with complete game information.
+              </p>
+            </article>
+          </a>
+
+          <a href="games.html">
+            <article class="card">
+              <header class="card-header">
+                <h3 class="card-title">GAMES</h3>
+              </header>
+              <p class="card-subtitle">
+                Access detailed game results and player statistics for each matchup.
+              </p>
+            </article>
+          </a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
