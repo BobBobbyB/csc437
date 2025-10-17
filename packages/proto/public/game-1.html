@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lakers vs Warriors - NBA Domain</title>
+  <meta name="description" content="Game details and player statistics">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./styles/page.css?v=1">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="assets/basketball.svg" alt="Basketball">
+        <h1>NBA DOMAIN</h1>
+      </a>
+      
+      <ul>
+        <li><a href="players.html">Players</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="games.html">Games</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <a href="games.html" class="btn btn-back">← Back to Games</a>
+
+    <header class="detail-header">
+      <h1 style="font-size: 3.75rem;">GAME DETAILS</h1>
+      <p style="color: var(--muted-foreground); font-size: 1.125rem;">January 15, 2024 • 7:30 PM</p>
+      <p style="color: var(--muted-foreground);">Crypto.com Arena</p>
+    </header>
+
+    <article class="card" style="margin-bottom: 2rem;">
+      <div style="padding: 1rem 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+          <div style="flex: 1;">
+            <a href="team-warriors.html">
+              <div style="font-family: var(--font-display); font-size: 1.875rem;">Golden State Warriors</div>
+            </a>
+            <div style="font-size: 0.875rem; color: var(--muted-foreground);">Away</div>
+          </div>
+          <div style="font-family: var(--font-display); font-size: 3.75rem; color: var(--primary); padding: 0 2rem;">108</div>
+        </div>
+        
+        <div style="text-align: center; padding: 1rem 0;">
+          <div style="font-family: var(--font-display); font-size: 1.5rem; color: var(--muted-foreground);">VS</div>
+        </div>
+        
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem;">
+          <div style="flex: 1;">
+            <a href="team-lakers.html">
+              <div style="font-family: var(--font-display); font-size: 1.875rem;">Los Angeles Lakers</div>
+            </a>
+            <div style="font-size: 0.875rem; color: var(--muted-foreground);">Home</div>
+          </div>
+          <div style="font-family: var(--font-display); font-size: 3.75rem; color: var(--primary); padding: 0 2rem;">112</div>
+        </div>
+
+        <div style="text-align: center; padding-top: 1.5rem; border-top: 1px solid var(--border); margin-top: 1.5rem;">
+          <span style="font-family: var(--font-display); font-size: 1.125rem; color: var(--muted-foreground);">Final</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <header class="card-header">
+        <h3>PLAYER STATS</h3>
+      </header>
+      
+      <a href="player-lebron.html">
+        <div class="game-card">
+          <div style="margin-bottom: 1rem;">
+            <div style="font-family: var(--font-display); font-size: 1.25rem;">LeBron James</div>
+            <div style="font-size: 0.875rem; color: var(--muted-foreground);">Lakers</div>
+          </div>
+          <div class="stats-grid" style="grid-template-columns: repeat(5, 1fr);">
+            <div class="stat-item">
+              <div class="stat-value" style="font-size: 1.5rem;">28</div>
+              <div class="stat-label">PTS</div>
+            </div>
+            <div class="stat-item">
+              <div style="font-family: var(--font-display); font-size: 1.5rem;">8</div>
+              <div class="stat-label">REB</div>
+            </div>
+            <div class="stat-item">
+              <div style="font-family: var(--font-display); font-size: 1.5rem;">10</div>
+              <div class="stat-label">AST</div>
+            </div>
+            <div class="stat-item">
+              <div style="font-family: var(--font-display); font-size: 1.125rem;">11-20</div>
+              <div class="stat-label">FG</div>
+            </div>
+            <div class="stat-item">
+              <div style="font-family: var(--font-display); font-size: 1.125rem;">2-6</div>
+              <div class="stat-label">3PT</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="player-curry.html">
+        <div class="game-card">
+          <div style="margin-bottom: 1rem;">
+            <div style="font-family: var(--font-display); font-size: 1.25rem;">Stephen Curry</div>
+            <div style="font-size: 0.875rem; color: var(--muted-foreground);">Warriors</div>
+          </div>
+          <div class="stats-grid" style="grid-template-columns: repeat(5, 1fr);">
+            <div class="stat-item">
+              <div class="stat-value" style="font-size: 1.5rem;">35</div>
+              <div class="stat-label">PTS</div>
+            </div>
+            <div class="stat-item">
+              <div style="font-family: var(--font-display); font-size: 1.5rem;">4</div>
+              <div class="stat-label">REB</div>
+            </div>
+            <div class="stat-item">
+              <div style="font-family: var(--font-display); font-size: 1.5rem;">7</div>
+              <div class="stat-label">AST</div>
+            </div>
+            <div class="stat-item">
+              <div style="font-family: var(--font-display); font-size: 1.125rem;">13-25</div>
+              <div class="stat-label">FG</div>
+            </div>
+            <div class="stat-item">
+              <div style="font-family: var(--font-display); font-size: 1.125rem;">6-12</div>
+              <div class="stat-label">3PT</div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </article>
+  </main>
+</body>
+</html>
