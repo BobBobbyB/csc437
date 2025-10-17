@@ -91,20 +91,20 @@ svg.icon use {
     height: 100%;
   }
   
-  .corner-icon {
+  /* .corner-icon {
     position: fixed;
     bottom: 20px;
     right: 20px;
     width: 40px;      
     height: 40px;
     display: block;   /* ensures fixed sizing */
-    fill: var(--color-accent);
+    /* fill: var(--color-accent);
     opacity: 0.8;
     pointer-events: none; /* avoids blocking links underneath */
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    /* transition: transform 0.2s ease, opacity 0.2s ease;
   }
   
   .corner-icon:hover {
     transform: scale(1.1);
     opacity: 1;
-  }
+  } */
