@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Angeles Lakers - NBA Domain</title>
+  <meta name="description" content="Los Angeles Lakers team profile and roster">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./styles/page.css?v=4">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="assets/basketball.svg" alt="Basketball">
+        <h1>NBA DOMAIN</h1>
+      </a>
+      
+      <ul>
+        <li><a href="players.html">Players</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="games.html">Games</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <a href="teams.html" class="btn btn-back">← Back to Teams</a>
+
+    <header class="detail-header">
+      <h1 class="detail-title">LOS ANGELES LAKERS</h1>
+      <p style="color: var(--muted-foreground); font-size: 1.25rem;">Western Conference • Pacific Division</p>
+    </header>
+
+    <section class="grid grid-3" style="margin-bottom: 2rem;">
+      <article class="card">
+        <header class="card-header">
+          <h3>RECORD</h3>
+        </header>
+        <div style="text-align: center;">
+          <div class="stat-value" style="font-size: 3.75rem; margin-bottom: 0.5rem;">28-15</div>
+          <div style="color: var(--muted-foreground);">Season Record</div>
+        </div>
+      </article>
+
+      <article class="card" style="grid-column: span 2;">
+        <header class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
+          <h3>SCHEDULE</h3>
+          <a href="schedule.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">View Full Schedule</a>
+        </header>
+        <p style="color: var(--muted-foreground);">
+          Want to follow the Los Angeles Lakers throughout the season? Find them on the schedule page.
+        </p>
+      </article>
+    </section>
+
+    <section>
+      <article class="card">
+        <header class="card-header">
+          <h3>ROSTER</h3>
+        </header>
+        
+        <a href="player-lebron.html">
+          <div class="game-card">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <div style="font-weight: 600; font-size: 1.125rem;">LeBron James</div>
+                <div style="font-size: 0.875rem; color: var(--muted-foreground);">F • #23</div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <div class="game-card">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <div style="font-weight: 600; font-size: 1.125rem;">Anthony Davis</div>
+              <div style="font-size: 0.875rem; color: var(--muted-foreground);">F • #3</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-card">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <div style="font-weight: 600; font-size: 1.125rem;">Austin Reaves</div>
+              <div style="font-size: 0.875rem; color: var(--muted-foreground);">G • #15</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
