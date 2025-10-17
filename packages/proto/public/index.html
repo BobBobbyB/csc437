@@ -1,106 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NBA Teams</title>
-    
-    <!-- Web fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    
-    <!-- Existing CSS links -->
-    <link rel="stylesheet" href="/styles/tokens.css" />
-    <link rel="stylesheet" href="/styles/page.css" />  <!-- Using the updated CSS I provided earlier -->
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NBA Domain - Players, Teams, Games & Stats</title>
+  <meta name="description" content="Explore NBA players, teams, schedules, games and statistics in this comprehensive basketball domain application">
 
-  <body>
-    <header>
-      <!-- Reverted SVG to original format for compatibility -->
-      <nav>
-        <a href="index.html" class="logo">
-          <svg class="icon" width="75" height="75">  <!-- Adjusted size based on CSS -->
-            <use xlink:href="icons/basketball.svg#icon-basketball"></use>
-          </svg>
-          <h1>NBA Teams</h1>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/page.css?v=1">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav aria-label="Primary">
+      <a href="index.html" class="logo" aria-label="Home">
+        <img src="assets/basketball.svg" alt="" width="40" height="40" decoding="async">
+        <span class="logo-text">NBA DOMAIN</span>
+      </a>
+
+      <ul>
+        <li><a href="players.html">Players</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="games.html">Games</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="home-title">
+      <img src="assets/basketball.svg" alt="" width="96" height="96" decoding="async">
+      <h1 id="home-title">NBA DOMAIN</h1>
+      <p>Explore comprehensive NBA data including players, teams, schedules, games, and detailed statistics</p>
+      <div class="hero-buttons">
+        <a href="players.html" class="btn btn-primary">VIEW PLAYERS</a>
+        <a href="schedule.html" class="btn btn-outline">VIEW SCHEDULE</a>
+      </div>
+    </section>
+
+    <!-- Explore grid -->
+    <section aria-labelledby="explore-title">
+      <h2 id="explore-title">EXPLORE THE DOMAIN</h2>
+
+      <div class="grid grid-4">
+        <a href="players.html">
+          <article class="card">
+            <header class="card-header">
+              <h3 class="card-title">PLAYERS</h3>
+            </header>
+            <p class="card-subtitle">
+              Browse NBA players, view their stats, and explore their performance across games
+            </p>
+          </article>
         </a>
-        
-        <ul>
-          <li><a href="team.html">Teams</a></li>
-          <li><a href="players.html">Players</a></li>  <!-- Added from second file -->
-          <li><a href="schedule.html">Schedule</a></li>  <!-- Added from second file -->
-          <li><a href="games.html">Games</a></li>  <!-- Added from second file -->
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <!-- Hero section from second file, adapted -->
-      <section class="hero">
-        <img src="icons/basketball.svg" alt="Basketball" />  <!-- Keeping as <img> for hero; check path -->
-        <h1>NBA Teams</h1>
-        <p>Explore comprehensive NBA data including teams, players, schedules, games, and detailed statistics.</p>
-        <div class="hero-buttons">
-          <a href="team.html" class="btn btn-primary">VIEW TEAMS</a>
-          <a href="players.html" class="btn btn-outline">VIEW PLAYERS</a>  <!-- Added from second file -->
-          <a href="schedule.html" class="btn btn-outline">VIEW SCHEDULE</a>  <!-- Added from second file -->
-        </div>
-      </section>
+        <a href="teams.html">
+          <article class="card">
+            <header class="card-header">
+              <h3 class="card-title">TEAMS</h3>
+            </header>
+            <p class="card-subtitle">
+              Explore team rosters, records, and follow their schedules throughout the season
+            </p>
+          </article>
+        </a>
 
-      <!-- Explore section with grid of cards from second file -->
-      <section>
-        <h2>EXPLORE THE DOMAIN</h2>
-        
-        <div class="grid grid-4">
-          <a href="players.html">
-            <article class="card">
-              <header class="card-header">
-                <h3 class="card-title">PLAYERS</h3>
-              </header>
-              <p class="card-subtitle">
-                Browse NBA players, view their stats, and explore their performance across games.
-              </p>
-            </article>
-          </a>
+        <a href="schedule.html">
+          <article class="card">
+            <header class="card-header">
+              <h3 class="card-title">SCHEDULE</h3>
+            </header>
+            <p class="card-subtitle">
+              View upcoming games and past results with complete game information
+            </p>
+          </article>
+        </a>
 
-          <a href="team.html">
-            <article class="card">
-              <header class="card-header">
-                <h3 class="card-title">TEAMS</h3>
-              </header>
-              <p class="card-subtitle">
-                Explore team rosters, records, and follow their schedules throughout the season.
-              </p>
-            </article>
-          </a>
-
-          <a href="schedule.html">
-            <article class="card">
-              <header class="card-header">
-                <h3 class="card-title">SCHEDULE</h3>
-              </header>
-              <p class="card-subtitle">
-                View upcoming games and past results with complete game information.
-              </p>
-            </article>
-          </a>
-
-          <a href="games.html">
-            <article class="card">
-              <header class="card-header">
-                <h3 class="card-title">GAMES</h3>
-              </header>
-              <p class="card-subtitle">
-                Access detailed game results and player statistics for each matchup.
-              </p>
-            </article>
-          </a>
-        </div>
-      </section>
-    </main>
-  </body>
+        <a href="games.html">
+          <article class="card">
+            <header class="card-header">
+              <h3 class="card-title">GAMES</h3>
+            </header>
+            <p class="card-subtitle">
+              Access detailed game results and player statistics for each matchup
+            </p>
+          </article>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
