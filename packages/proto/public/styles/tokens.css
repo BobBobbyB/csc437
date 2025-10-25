@@ -55,4 +55,14 @@
     /* radius */
     --radius: var(--radius-md);
   }
-  
+
+.light-mode {
+    /* light mode overrides */
+    --background: hsl(0, 0%, 98%);
+    --foreground: hsl(220, 25%, 10%);
+    --card-bg: hsl(0, 0%, 100%);
+    --border: hsl(220, 15%, 85%);
+    --muted: hsl(220, 15%, 95%);
+    --muted-foreground: hsl(220, 15%, 40%);
+    --court-blue: hsl(240, 45%, 95%);
+  }

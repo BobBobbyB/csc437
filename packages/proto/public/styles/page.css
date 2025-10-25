@@ -55,6 +55,33 @@ nav {
 nav ul { list-style: none; display: flex; gap: var(--spacing-md); }
 nav a  { font-weight: 500; }
 
+/* theme toggle button */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .theme-toggle:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    transform: scale(1.05);
+  }
+  .theme-icon {
+    font-size: 1.25rem;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  .theme-toggle:hover .theme-icon {
+    transform: rotate(20deg);
+  }  
+
 /* main layout */
 main { max-width: 1200px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
 
