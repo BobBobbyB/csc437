@@ -1,4 +1,5 @@
-// theme toggle functionality
+// theme.js (module-safe version)
+
 class ThemeManager {
     constructor() {
       this.theme = localStorage.getItem('nba-theme') || 'dark';
@@ -22,9 +23,6 @@ class ThemeManager {
   
   // initialize on page load
   const themeManager = new ThemeManager();
-  
-  // toggle function
-  function toggleTheme() {
-    themeManager.toggle();
-  }
+
+  window.toggleTheme = () => themeManager.toggle();
   
