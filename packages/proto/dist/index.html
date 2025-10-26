@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NBA Domain - Players, Teams, Games & Stats</title>
+  <meta name="description" content="Explore NBA players, teams, schedules, games and statistics in this comprehensive basketball domain application">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" crossorigin href="/assets/index-CBYysXC3.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav aria-label="Primary">
+      <a href="index.html" class="logo" aria-label="Home">
+        <img src="/assets/basketball-BM67xv7o.svg" alt="" width="40" height="40" decoding="async">
+        <span class="logo-text">NBA DOMAIN</span>
+      </a>
+
+      <ul>
+        <li><a href="players.html">Players</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="games.html">Games</a></li>
+      </ul>
+      <button 
+      onclick="toggleTheme()" 
+      class="theme-toggle"
+      aria-label="Toggle dark/light mode"
+    >
+      <span class="theme-icon">🌙</span>
+    </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="home-title">
+      <img src="/assets/basketball-BM67xv7o.svg" alt="" width="96" height="96" decoding="async">
+      <h1 id="home-title">NBA DOMAIN</h1>
+      <p>Explore comprehensive NBA data including players, teams, schedules, games, and detailed statistics</p>
+      <div class="hero-buttons">
+        <a href="players.html" class="btn btn-primary">VIEW PLAYERS</a>
+        <a href="schedule.html" class="btn btn-outline">VIEW SCHEDULE</a>
+      </div>
+    </section>
+
+    <!-- Explore grid -->
+    <section aria-labelledby="explore-title">
+      <h2 id="explore-title">EXPLORE THE DOMAIN</h2>
+
+      <div class="grid grid-4">
+        <a href="players.html">
+          <article class="card">
+            <header class="card-header">
+              <h3 class="card-title">PLAYERS</h3>
+            </header>
+            <p class="card-subtitle">
+              Browse NBA players, view their stats, and explore their performance across games
+            </p>
+          </article>
+        </a>
+
+        <a href="teams.html">
+          <article class="card">
+            <header class="card-header">
+              <h3 class="card-title">TEAMS</h3>
+            </header>
+            <p class="card-subtitle">
+              Explore team rosters, records, and follow their schedules throughout the season
+            </p>
+          </article>
+        </a>
+
+        <a href="schedule.html">
+          <article class="card">
+            <header class="card-header">
+              <h3 class="card-title">SCHEDULE</h3>
+            </header>
+            <p class="card-subtitle">
+              View upcoming games and past results with complete game information
+            </p>
+          </article>
+        </a>
+
+        <a href="games.html">
+          <article class="card">
+            <header class="card-header">
+              <h3 class="card-title">GAMES</h3>
+            </header>
+            <p class="card-subtitle">
+              Access detailed game results and player statistics for each matchup
+            </p>
+          </article>
+        </a>
+      </div>
+    </section>
+  </main>
+  <script src="/scripts/theme.js"></script>
+</body>
+</html>

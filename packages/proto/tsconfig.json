@@ -1,16 +1,14 @@
+// tsconfig.json
 {
   "compilerOptions": {
     "target": "ES2022",
-    "useDefineForClassFields": true,
-    "module": "ES2022",
-    "moduleResolution": "Bundler",
+    "module": "ESNext",
+    "moduleResolution": "node",
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "strict": true,
-    "jsx": "react-jsx",
-    "types": [],
     "skipLibCheck": true,
     "noEmit": true,
     "baseUrl": "."
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*.ts"]
 }

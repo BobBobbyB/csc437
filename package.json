@@ -6,6 +6,9 @@
     "packages/*"
   ],
   "scripts": {
+    "dev": "vite --config packages/proto/vite.config.ts",
+    "build": "vite build --config packages/proto/vite.config.ts",
+    "preview": "vite preview --config packages/proto/vite.config.ts",
     "start": "npx http-server packages/proto/public -p 3000 -c-1"
   },
   "repository": {
