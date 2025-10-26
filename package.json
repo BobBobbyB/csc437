@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx http-server packages/proto/public -p 3000 -c-1"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,14 @@
     "url": "https://github.com/BobBobbyB/csc437/issues"
   },
   "homepage": "https://github.com/BobBobbyB/csc437#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.12"
+  },
+  "dependencies": {
+    "lit": "^3.3.1"
+  }
 }
