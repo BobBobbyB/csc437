@@ -9,7 +9,7 @@ export class PlayerCard extends LitElement {
     ppg: { type: Number },
     rpg: { type: Number },
     apg: { type: Number },
-    href: { type: String },
+    href: { type: String, reflect: true }
   } as const;
 
   name?: string;
@@ -23,12 +23,14 @@ export class PlayerCard extends LitElement {
 
   static styles = css`
     :host { display: block; }
+    a { color: inherit; text-decoration: none; display: block; }
     .card {
       background-color: var(--card-bg);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       padding: var(--spacing-md);
       transition: all .3s ease;
+      cursor: pointer;
     }
     .card:hover {
       border-color: var(--primary);
@@ -63,7 +65,7 @@ export class PlayerCard extends LitElement {
   `;
 
   render() {
-    return html`
+    const card = html`
       <article class="card">
         <header class="card-header">
           <h3 class="card-title">${this.name}</h3>
@@ -71,21 +73,15 @@ export class PlayerCard extends LitElement {
         </header>
         <p class="card-accent">${this.team}</p>
         <div class="stats-grid">
-          <div class="stat-item">
-            <span class="stat-value">${this.ppg}</span>
-            <span class="stat-label">PPG</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-value">${this.rpg}</span>
-            <span class="stat-label">RPG</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-value">${this.apg}</span>
-            <span class="stat-label">APG</span>
-          </div>
+          <div><span class="stat-value">${this.ppg}</span><span class="stat-label">PPG</span></div>
+          <div><span class="stat-value">${this.rpg}</span><span class="stat-label">RPG</span></div>
+          <div><span class="stat-value">${this.apg}</span><span class="stat-label">APG</span></div>
         </div>
       </article>
     `;
+
+    return this.href ? html`<a href="${this.href}">${card}</a>` : card;
   }
 }
+
 customElements.define('player-card', PlayerCard);
