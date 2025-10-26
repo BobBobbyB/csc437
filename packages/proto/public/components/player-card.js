@@ -1,4 +1,3 @@
-// packages/proto/public/components/player-card.js
 import { LitElement, html, css } from 'https://cdn.jsdelivr.net/npm/lit@3/+esm';
 
 class PlayerCard extends LitElement {

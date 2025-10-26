@@ -12,6 +12,8 @@
   
   <link rel="stylesheet" href="/styles/tokens.css?v=1">
   <link rel="stylesheet" href="./styles/page.css?v=4">
+
+  <script type="module" src="/components/team-card.js?v=2"></script>
 </head>
 <body>
   <header>
@@ -44,69 +46,33 @@
     </header>
 
     <section class="grid grid-3">
-      <a href="team-lakers.html">
-        <article class="card">
-          <header class="card-header">
-            <h3 class="card-title">Los Angeles Lakers</h3>
-            <p class="card-subtitle">Western Conference</p>
-          </header>
-          <div style="margin-bottom: 1rem;">
-            <div class="stat-value" style="font-size: 2.5rem;">28-15</div>
-            <div class="stat-label">Season Record</div>
-          </div>
-          <div>
-            <div style="font-size: 0.875rem; font-weight: 600; color: var(--muted-foreground); margin-bottom: 0.5rem;">Key Players:</div>
-            <ul style="list-style: none;">
-              <li style="font-size: 0.875rem;">LeBron James</li>
-              <li style="font-size: 0.875rem;">Anthony Davis</li>
-              <li style="font-size: 0.875rem;">Austin Reaves</li>
-            </ul>
-          </div>
-        </article>
-      </a>
-
-      <a href="team-warriors.html">
-        <article class="card">
-          <header class="card-header">
-            <h3 class="card-title">Golden State Warriors</h3>
-            <p class="card-subtitle">Western Conference</p>
-          </header>
-          <div style="margin-bottom: 1rem;">
-            <div class="stat-value" style="font-size: 2.5rem;">25-18</div>
-            <div class="stat-label">Season Record</div>
-          </div>
-          <div>
-            <div style="font-size: 0.875rem; font-weight: 600; color: var(--muted-foreground); margin-bottom: 0.5rem;">Key Players:</div>
-            <ul style="list-style: none;">
-              <li style="font-size: 0.875rem;">Stephen Curry</li>
-              <li style="font-size: 0.875rem;">Klay Thompson</li>
-              <li style="font-size: 0.875rem;">Draymond Green</li>
-            </ul>
-          </div>
-        </article>
-      </a>
-
-      <a href="team-suns.html">
-        <article class="card">
-          <header class="card-header">
-            <h3 class="card-title">Phoenix Suns</h3>
-            <p class="card-subtitle">Western Conference</p>
-          </header>
-          <div style="margin-bottom: 1rem;">
-            <div class="stat-value" style="font-size: 2.5rem;">30-13</div>
-            <div class="stat-label">Season Record</div>
-          </div>
-          <div>
-            <div style="font-size: 0.875rem; font-weight: 600; color: var(--muted-foreground); margin-bottom: 0.5rem;">Key Players:</div>
-            <ul style="list-style: none;">
-              <li style="font-size: 0.875rem;">Kevin Durant</li>
-              <li style="font-size: 0.875rem;">Devin Booker</li>
-              <li style="font-size: 0.875rem;">Bradley Beal</li>
-            </ul>
-          </div>
-        </article>
-      </a>
-    </section>
+      <team-card
+          href="team-lakers.html"
+          name="Los Angeles Lakers"
+          conference="Western Conference"
+          wins="52"
+          losses="30"
+          players="LeBron James, Anthony Davis, D'Angelo Russell"
+      ></team-card>
+    
+      <team-card
+          href="team-warriors.html"
+          name="Golden State Warriors"
+          conference="Western Conference"
+          wins="48"
+          losses="34"
+          players="Stephen Curry, Klay Thompson, Draymond Green"
+      ></team-card>
+    
+      <team-card
+          href="team-suns.html"
+          name="Phoenix Suns"
+          conference="Western Conference"
+          wins="50"
+          losses="32"
+          players="Kevin Durant | Devin Booker | Bradley Beal"
+      ></team-card>
+    </section>    
   </main>
   <script src="/scripts/theme.js"></script>
 </body>

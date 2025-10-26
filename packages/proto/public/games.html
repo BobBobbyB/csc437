@@ -12,6 +12,8 @@
   
   <link rel="stylesheet" href="/styles/tokens.css?v=1">
   <link rel="stylesheet" href="./styles/page.css?v=3">
+
+  <script type="module" src="/components/game-card.js?v=2"></script>
 </head>
 <body class="nba-body">  <!-- added class for styling -->
   <header>
@@ -46,51 +48,27 @@
       </div>
     </header>
 
-    <section class="grid grid-2">
-      <a href="game-1.html">
-        <article class="card">
-          <header class="card-header">
-            <div style="font-size: 0.875rem; color: var(--muted-foreground);">January 15, 2024</div>
-          </header>
-          
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-            <span style="font-family: var(--font-display); font-size: 1.125rem;">Golden State Warriors</span>
-            <span class="stat-value" style="font-size: 1.875rem;">108</span>
-          </div>
-          
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-            <span style="font-family: var(--font-display); font-size: 1.125rem;">Los Angeles Lakers</span>
-            <span class="stat-value" style="font-size: 1.875rem;">112</span>
-          </div>
-          
-          <div style="text-align: center; padding-top: 1rem; border-top: 1px solid var(--border);">
-            <span style="font-size: 0.875rem; color: var(--muted-foreground);">Final</span>
-          </div>
-        </article>
-      </a>
-
-      <a href="game-2.html">
-        <article class="card">
-          <header class="card-header">
-            <div style="font-size: 0.875rem; color: var(--muted-foreground);">January 12, 2024</div>
-          </header>
-          
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-            <span style="font-family: var(--font-display); font-size: 1.125rem;">Los Angeles Lakers</span>
-            <span class="stat-value" style="font-size: 1.875rem;">115</span>
-          </div>
-          
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-            <span style="font-family: var(--font-display); font-size: 1.125rem;">Phoenix Suns</span>
-            <span class="stat-value" style="font-size: 1.875rem;">105</span>
-          </div>
-          
-          <div style="text-align: center; padding-top: 1rem; border-top: 1px solid var(--border);">
-            <span style="font-size: 0.875rem; color: var(--muted-foreground);">Final</span>
-          </div>
-        </article>
-      </a>
-    </section>
+    <section class="grid grid-3">
+        <game-card
+            href="game-1.html"
+            date="January 15, 2024 • 7:30 PM"
+            location="Crypto.com Arena"
+            awayTeam="Golden State Warriors"
+            homeTeam="Los Angeles Lakers"
+            awayScore="108"
+            homeScore="112"
+            status="Final"
+        ></game-card>
+      
+        <game-card
+            href="game-2.html"
+            date="January 18, 2024 • 7:00 PM"
+            location="Chase Center"
+            awayTeam="Phoenix Suns"
+            homeTeam="Golden State Warriors"
+            status="Upcoming"
+        ></game-card>
+    </section>      
   </main>
   <script src="/scripts/theme.js"></script>
 </body>
