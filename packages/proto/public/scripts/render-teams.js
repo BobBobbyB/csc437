@@ -1,6 +1,6 @@
 async function renderTeams() {
     try {
-      const response = await fetch('/data/teams.json');
+      const response = await fetch('./data/teams.json');
       const teams = await response.json();
   
       const container = document.getElementById('teams-grid');

@@ -1,6 +1,6 @@
 async function renderGames() {
     try {
-      const response = await fetch('/data/games.json');
+      const response = await fetch('./data/games.json');
       const games = await response.json();
       
       const container = document.getElementById('games-grid');
