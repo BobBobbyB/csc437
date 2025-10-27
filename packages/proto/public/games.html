@@ -15,7 +15,7 @@
 
   <script type="module" src="../src/main.ts"></script>
 </head>
-<body class="nba-body">  <!-- added class for styling -->
+<body class="nba-body">
   <header>
     <nav>
       <a href="index.html" class="logo">
@@ -44,32 +44,19 @@
       <img src="assets/scoreboard.svg" alt="Games" style="width: 3rem; height: 3rem;">
       <div>
         <h1>GAMES</h1>
-        <p style="color: var(--muted-foreground); font-size: 1.125rem;">Game results and statistics</p>
+        <p style="color: var(--muted-foreground); font-size: 1.125rem;">
+          Game results and statistics
+        </p>
       </div>
     </header>
 
-    <section class="grid grid-3">
-        <game-card
-            href="game-1.html"
-            date="January 15, 2024 • 7:30 PM"
-            location="Crypto.com Arena"
-            awayTeam="Golden State Warriors"
-            homeTeam="Los Angeles Lakers"
-            awayScore="108"
-            homeScore="112"
-            status="Final"
-        ></game-card>
-      
-        <game-card
-            href="game-2.html"
-            date="January 18, 2024 • 7:00 PM"
-            location="Chase Center"
-            awayTeam="Phoenix Suns"
-            homeTeam="Golden State Warriors"
-            status="Upcoming"
-        ></game-card>
-    </section>      
+    <!-- dynamic container for games -->
+    <section id="games-grid" class="grid grid-3">
+      <p style="color: var(--muted-foreground);">Loading games...</p>
+    </section>
   </main>
+
   <script type="module" src="./scripts/theme.js"></script>
+  <script type="module" src="/scripts/render-games.js"></script>
 </body>
 </html>

@@ -37,50 +37,23 @@
       <span class="theme-icon">🌙</span>
     </button>
     </nav>
-  </header>
+</header>
 
-  <main>
+<main>
     <header>
         <h1>PLAYERS</h1>
         <p style="color: var(--muted-foreground); font-size: 1.125rem;">
         Browse NBA players and their statistics
         </p>
     </header>
-    <section class="grid grid-3">
-        <player-card
-          href="player-lebron.html"
-          name="LeBron James"
-          number="23"
-          position="Forward"
-          team="Los Angeles Lakers"
-          ppg="25.7"
-          rpg="7.3"
-          apg="7.5"
-        ></player-card>
-      
-        <player-card
-          href="player-curry.html"
-          name="Stephen Curry"
-          number="30"
-          position="Guard"
-          team="Golden State Warriors"
-          ppg="29.4"
-          rpg="5.1"
-          apg="6.3"
-        ></player-card>
-      
-        <player-card
-          href="player-durant.html"
-          name="Kevin Durant"
-          number="35"
-          position="Forward"
-          team="Phoenix Suns"
-          ppg="27.1"
-          rpg="6.7"
-          apg="5.0"
-        ></player-card>
-      </section>      
-  </main>
-  <script type="module" src="./scripts/theme.js"></script>
+
+    <!-- dynamic container for players -->
+    <section id="players-grid" class="grid grid-3">
+        <p style="color: var(--muted-foreground);">Loading players...</p>
+    </section>
+</main>
+
+<script type="module" src="./scripts/theme.js"></script>
+<script type="module" src="/scripts/render-players.js"></script>
 </body>
 </html>

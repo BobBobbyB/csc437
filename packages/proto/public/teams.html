@@ -42,38 +42,18 @@
   <main>
     <header>
       <h1>TEAMS</h1>
-      <p style="color: var(--muted-foreground); font-size: 1.125rem;">Browse NBA teams and their rosters</p>
+      <p style="color: var(--muted-foreground); font-size: 1.125rem;">
+        Browse NBA teams and their rosters
+      </p>
     </header>
 
-    <section class="grid grid-3">
-      <team-card
-          href="team-lakers.html"
-          name="Los Angeles Lakers"
-          conference="Western Conference"
-          wins="52"
-          losses="30"
-          players="LeBron James, Anthony Davis, D'Angelo Russell"
-      ></team-card>
-    
-      <team-card
-          href="team-warriors.html"
-          name="Golden State Warriors"
-          conference="Western Conference"
-          wins="48"
-          losses="34"
-          players="Stephen Curry, Klay Thompson, Draymond Green"
-      ></team-card>
-    
-      <team-card
-          href="team-suns.html"
-          name="Phoenix Suns"
-          conference="Western Conference"
-          wins="50"
-          losses="32"
-          players="Kevin Durant | Devin Booker | Bradley Beal"
-      ></team-card>
-    </section>    
+    <!-- dynamic container for client-side rendering -->
+    <section id="teams-grid" class="grid grid-3">
+      <p style="color: var(--muted-foreground);">Loading teams...</p>
+    </section>
   </main>
+
   <script type="module" src="./scripts/theme.js"></script>
+  <script type="module" src="/scripts/render-teams.js"></script>
 </body>
 </html>
