@@ -1,0 +1,42 @@
+[
+    {
+      "id": "lebron",
+      "name": "LeBron James",
+      "number": "23",
+      "position": "Forward",
+      "team": "Los Angeles Lakers",
+      "stats": {
+        "ppg": 25.7,
+        "rpg": 7.3,
+        "apg": 7.5
+      },
+      "href": "player-lebron.html"
+    },
+    {
+      "id": "curry",
+      "name": "Stephen Curry",
+      "number": "30",
+      "position": "Guard",
+      "team": "Golden State Warriors",
+      "stats": {
+        "ppg": 29.4,
+        "rpg": 5.1,
+        "apg": 6.3
+      },
+      "href": "player-curry.html"
+    },
+    {
+      "id": "durant",
+      "name": "Kevin Durant",
+      "number": "35",
+      "position": "Forward",
+      "team": "Phoenix Suns",
+      "stats": {
+        "ppg": 27.1,
+        "rpg": 6.7,
+        "apg": 5.0
+      },
+      "href": "player-durant.html"
+    }
+]
+  

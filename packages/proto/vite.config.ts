@@ -6,7 +6,7 @@ const root = resolve(__dirname, 'public');
 export default defineConfig({
   appType: 'mpa',
   root,                
-  publicDir: false,     // no extra public dir
+  publicDir: root,     // no extra public dir
   server: { port: 3000 },
   preview: { port: 4173 },
   resolve: {

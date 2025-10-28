@@ -1,0 +1,30 @@
+[
+    {
+      "id": "lakers",
+      "name": "Los Angeles Lakers",
+      "conference": "Western Conference",
+      "wins": 28,
+      "losses": 15,
+      "players": ["LeBron James", "Anthony Davis", "Austin Reaves"],
+      "href": "team-lakers.html"
+    },
+    {
+      "id": "warriors",
+      "name": "Golden State Warriors",
+      "conference": "Western Conference",
+      "wins": 25,
+      "losses": 18,
+      "players": ["Stephen Curry", "Klay Thompson", "Draymond Green"],
+      "href": "team-warriors.html"
+    },
+    {
+      "id": "suns",
+      "name": "Phoenix Suns",
+      "conference": "Western Conference",
+      "wins": 30,
+      "losses": 13,
+      "players": ["Kevin Durant", "Devin Booker", "Bradley Beal"],
+      "href": "team-suns.html"
+    }
+  ]
+  

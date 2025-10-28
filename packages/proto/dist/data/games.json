@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "date": "January 15, 2024",
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Golden State Warriors",
+      "homeScore": 112,
+      "awayScore": 108,
+      "status": "Final",
+      "href": "game-1.html"
+    },
+    {
+      "id": 2,
+      "date": "January 20, 2024",
+      "homeTeam": "Phoenix Suns",
+      "awayTeam": "Los Angeles Lakers",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "Upcoming",
+      "href": "game-2.html"
+    }
+]
+  
