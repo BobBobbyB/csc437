@@ -1,0 +1,12 @@
+# Node dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables (DO NOT COMMIT)
+.env
+
+# System / IDE files
+.DS_Store
+*.log
