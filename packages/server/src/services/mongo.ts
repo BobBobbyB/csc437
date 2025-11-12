@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+console.log("Loaded ENV:", process.env.MONGO_CLUSTER);
 
 dotenv.config();
 
