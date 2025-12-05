@@ -30,6 +30,7 @@
     "vite": "^7.1.12"
   },
   "dependencies": {
+    "@calpoly/mustang": "^1.0.18",
     "lit": "^3.3.1"
   }
 }

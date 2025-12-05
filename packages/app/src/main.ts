@@ -1,52 +1,61 @@
-import { mount, route } from "mustang";
+import { html } from "lit";
+import {
+  Auth,
+  History,
+  Switch,
+  Store,
+  define
+} from "@calpoly/mustang";
 
-// Register Lit components (just importing defines custom elements)
-import "/components/game-card.js";
-import "/components/nba-games.js";
+import type { Model } from "./model";
+import type { Msg } from "./messages";
+import { init } from "./model";
+import update from "./update";
 
-import "/components/player-card.js";
-import "/components/nba-players.js";
-import "/components/player-compare.js";
+import { TeamsViewElement } from "./views/teams-view";
 
-import "/components/team-card.js";
-import "/components/nba-teams.js";
+// ---- routes for <mu-switch> ----
+const routes: Switch.Route[] = [
+  {
+    path: "/teams",
+    view: () => html`<teams-view></teams-view>`
+  },
+  {
+    path: "/",
+    view: () => html`
+      <section class="hero" aria-labelledby="home-title">
+        <img src="/assets/basketball.svg" alt="" width="96" height="96" decoding="async" />
+        <h1 id="home-title">NBA DOMAIN</h1>
+        <p>
+          Explore NBA teams in a single-page app powered by Mustang.
+        </p>
+        <div class="hero-buttons">
+          <a href="/teams" class="btn btn-primary">VIEW TEAMS</a>
+        </div>
+      </section>
+    `
+  }
+];
 
-// --- Mount the SPA shell ---
-mount("#app", () => `
-  <h1>NBA Domain SPA</h1>
+// ----  mstang providers + view ----
+define({
+  "mu-auth": Auth.Provider,
+  "mu-history": History.Provider,
 
-  <nav>
-    <a href="#/players">Players</a>
-    <a href="#/teams">Teams</a>
-    <a href="#/games">Games</a>
-  </nav>
+  "mu-switch": class AppSwitch extends Switch.Element {
+    constructor() {
+      super(routes, "nba:history", "nba:auth");
+    }
+  },
 
-  <div id="view"></div>
-`);
+  "mu-store": class AppStore
+    extends Store.Provider<Model, Msg>
+  {
+    constructor() {
+      super(update, init, "nba:auth");
+    }
+  },
 
-// --- Route Definitions ---
-route("#/players", () => {
-  document.querySelector("#view")!.innerHTML = `
-    <nba-players src="/data/players.json"></nba-players>
-  `;
+  // MVU Teams view
+  "teams-view": TeamsViewElement
 });
-
-route("#/teams", () => {
-  document.querySelector("#view")!.innerHTML = `
-    <nba-teams src="/data/teams.json"></nba-teams>
-  `;
-});
-
-route("#/games", () => {
-  document.querySelector("#view")!.innerHTML = `
-    <nba-games src="/data/games.json"></nba-games>
-  `;
-});
-
-// Default Route
-route("", () => {
-  document.querySelector("#view")!.innerHTML = `
-    <p>Select a section from the menu.</p>
-  `;
-});
-

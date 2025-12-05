@@ -1,20 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <title>NBA SPA</title>
 
-  <!-- Load your design tokens + global styles -->
+  <!-- existing styles from proto -->
   <link rel="stylesheet" href="/styles/tokens.css" />
   <link rel="stylesheet" href="/styles/page.css" />
 </head>
 
 <body>
-  <!-- Mustang will mount the SPA here -->
-  <div id="app"></div>
+  <!-- mustang providers: history -> auth -> store -->
+  <mu-history provides="nba:history">
+    <mu-auth provides="nba:auth" redirect="/login.html">
+      <mu-store provides="nba:model">
+        <article>
+          <!-- simple header / nav, always visible -->
+          <header>
+            <nav aria-label="Primary navigation">
+              <a href="/" class="logo" aria-label="Home">
+                <img src="/assets/basketball.svg" alt="" width="40" height="40" decoding="async" />
+                <span class="logo-text">NBA DOMAIN</span>
+              </a>
 
-  <!-- Load your main TypeScript entry -->
+              <ul>
+                <li><a href="/players">Players</a></li>
+                <li><a href="/teams">Teams</a></li>
+                <li><a href="/schedule">Schedule</a></li>
+                <li><a href="/games">Games</a></li>
+              </ul>
+
+              <button
+                onclick="toggleTheme()"
+                class="theme-toggle"
+                aria-label="Toggle dark/light mode"
+              >
+                <span class="theme-icon">🌙</span>
+              </button>
+            </nav>
+          </header>
+
+          <!-- SPA views render here -->
+          <main>
+            <mu-switch></mu-switch>
+          </main>
+        </article>
+      </mu-store>
+    </mu-auth>
+  </mu-history>
+
+  <!-- SPA entry -->
   <script type="module" src="/src/main.ts"></script>
+  <!-- theme toggle script (copied from proto/public/scripts) -->
+  <script type="module" src="/scripts/theme.js"></script>
 </body>
 </html>
-
