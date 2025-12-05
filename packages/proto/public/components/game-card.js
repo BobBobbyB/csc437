@@ -21,11 +21,48 @@ class GameCard extends LitElement {
       border: 1px solid var(--border);
       border-radius: var(--radius);
       padding: var(--spacing-md);
-      transition: all .3s ease;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
     }
+
+    /* base hover (in case variables not set) */
     .card:hover {
       border-color: var(--primary);
-      box-shadow: 0 0 30px hsla(25,95%,53%,.3);
+      box-shadow: 0 0 20px hsla(25,95%,53%,.3);
+    }
+
+    /* neon halo for game cards (inside shadow DOM) */
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      box-shadow: 0 0 0px hsla(25, 95%, 53%, 0);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    :host(:hover) .card {
+      transform: translateY(-4px) scale(1.01);
+      border-color: var(--primary);
+    }
+
+    :host(:hover) .card::after {
+      opacity: 1;
+      animation: neon-pulse-games 1.5s ease-in-out infinite;
+    }
+
+    @keyframes neon-pulse-games {
+      0%, 100% {
+        box-shadow: 0 0 0px hsla(25, 95%, 53%, 0.0);
+      }
+      50% {
+        box-shadow:
+          0 0 18px hsla(25, 95%, 53%, 0.65),
+          0 0 30px hsla(240, 45%, 45%, 0.55);
+      }
     }
 
     .card-header {
@@ -56,11 +93,32 @@ class GameCard extends LitElement {
       align-items: center;
       margin: var(--spacing-sm) 0;
     }
+
     .team-name {
       font-family: var(--font-display);
       font-size: 1.125rem;
       color: var(--foreground);
+      position: relative;
+      display: inline-block;
     }
+
+    /* underline for team names */
+    .team-name::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.2rem;
+      width: 0;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      transition: width 0.25s ease;
+    }
+
+    :host(:hover) .team-name::after {
+      width: 100%;
+    }
+
     .score {
       font-family: var(--font-display);
       font-size: 2rem;

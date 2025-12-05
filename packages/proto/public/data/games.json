@@ -1,23 +1,135 @@
 [
-    {
-      "id": 1,
-      "date": "January 15, 2024",
-      "homeTeam": "Los Angeles Lakers",
-      "awayTeam": "Golden State Warriors",
-      "homeScore": 112,
-      "awayScore": 108,
-      "status": "Final",
-      "href": "game-1.html"
-    },
-    {
-      "id": 2,
-      "date": "January 20, 2024",
-      "homeTeam": "Phoenix Suns",
-      "awayTeam": "Los Angeles Lakers",
-      "homeScore": 0,
-      "awayScore": 0,
-      "status": "Upcoming",
-      "href": "game-2.html"
-    }
+  {
+    "id": 1,
+    "date": "December 2, 2025",
+    "homeTeam": "Los Angeles Lakers",
+    "awayTeam": "Golden State Warriors",
+    "homeScore": 112,
+    "awayScore": 108,
+    "status": "Final",
+    "location": "Crypto.com Arena",
+    "href": "game-1.html"
+  },
+  {
+    "id": 2,
+    "date": "December 2, 2025",
+    "homeTeam": "Phoenix Suns",
+    "awayTeam": "Los Angeles Lakers",
+    "homeScore": 90,
+    "awayScore": 108,
+    "status": "Final",
+    "location": "Footprint Center",
+    "href": "game-2.html"
+  },
+
+  {
+    "id": 3,
+    "date": "December 3, 2025",
+    "homeTeam": "San Antonio Spurs",
+    "awayTeam": "Orlando Magic",
+    "homeScore": 114,
+    "awayScore": 112,
+    "status": "Final",
+    "location": "Frost Bank Center",
+    "href": "game-3.html"
+  },
+  {
+    "id": 4,
+    "date": "December 3, 2025",
+    "homeTeam": "Denver Nuggets",
+    "awayTeam": "Indiana Pacers",
+    "homeScore": 135,
+    "awayScore": 120,
+    "status": "Final",
+    "location": "Ball Arena",
+    "href": "game-4.html"
+  },
+  {
+    "id": 5,
+    "date": "December 3, 2025",
+    "homeTeam": "Portland Trail Blazers",
+    "awayTeam": "Cleveland Cavaliers",
+    "homeScore": 122,
+    "awayScore": 110,
+    "status": "Final",
+    "location": "Moda Center",
+    "href": "game-5.html"
+  },
+  {
+    "id": 6,
+    "date": "December 3, 2025",
+    "homeTeam": "Charlotte Hornets",
+    "awayTeam": "New York Knicks",
+    "homeScore": 104,
+    "awayScore": 119,
+    "status": "Final",
+    "location": "Spectrum Center",
+    "href": "game-6.html"
+  },
+  {
+    "id": 7,
+    "date": "December 3, 2025",
+    "homeTeam": "LA Clippers",
+    "awayTeam": "Atlanta Hawks",
+    "homeScore": 115,
+    "awayScore": 92,
+    "status": "Final",
+    "location": "Crypto.com Arena",
+    "href": "game-7.html"
+  },
+  {
+    "id": 8,
+    "date": "December 3, 2025",
+    "homeTeam": "Sacramento Kings",
+    "awayTeam": "Houston Rockets",
+    "homeScore": 95,
+    "awayScore": 121,
+    "status": "Final",
+    "location": "Golden 1 Center",
+    "href": "game-8.html"
+  },
+  {
+    "id": 9,
+    "date": "December 3, 2025",
+    "homeTeam": "Detroit Pistons",
+    "awayTeam": "Milwaukee Bucks",
+    "homeScore": 109,
+    "awayScore": 113,
+    "status": "Final",
+    "location": "Little Caesars Arena",
+    "href": "game-9.html"
+  },
+  {
+    "id": 10,
+    "date": "December 3, 2025",
+    "homeTeam": "Brooklyn Nets",
+    "awayTeam": "Chicago Bulls",
+    "homeScore": 113,
+    "awayScore": 103,
+    "status": "Final",
+    "location": "Barclays Center",
+    "href": "game-10.html"
+  },
+  {
+    "id": 11,
+    "date": "December 3, 2025",
+    "homeTeam": "Miami Heat",
+    "awayTeam": "Dallas Mavericks",
+    "homeScore": 108,
+    "awayScore": 118,
+    "status": "Final",
+    "location": "Kaseya Center",
+    "href": "game-11.html"
+  },
+  {
+    "id": 12,
+    "date": "December 3, 2025",
+    "homeTeam": "Memphis Grizzlies",
+    "awayTeam": "Phoenix Suns",
+    "homeScore": 106,
+    "awayScore": 112,
+    "status": "Final",
+    "location": "FedExForum",
+    "href": "game-12.html"
+  }
 ]
-  

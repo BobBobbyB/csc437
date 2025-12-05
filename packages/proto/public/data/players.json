@@ -1,42 +1,187 @@
 [
-    {
-      "id": "lebron",
-      "name": "LeBron James",
-      "number": "23",
-      "position": "Forward",
-      "team": "Los Angeles Lakers",
-      "stats": {
-        "ppg": 25.7,
-        "rpg": 7.3,
-        "apg": 7.5
-      },
-      "href": "player-lebron.html"
-    },
-    {
-      "id": "curry",
-      "name": "Stephen Curry",
-      "number": "30",
-      "position": "Guard",
-      "team": "Golden State Warriors",
-      "stats": {
-        "ppg": 29.4,
-        "rpg": 5.1,
-        "apg": 6.3
-      },
-      "href": "player-curry.html"
-    },
-    {
-      "id": "durant",
-      "name": "Kevin Durant",
-      "number": "35",
-      "position": "Forward",
-      "team": "Phoenix Suns",
-      "stats": {
-        "ppg": 27.1,
-        "rpg": 6.7,
-        "apg": 5.0
-      },
-      "href": "player-durant.html"
+  {
+    "id": "jokic",
+    "name": "Nikola Jokic",
+    "number": "15",
+    "position": "Center",
+    "team": "Denver Nuggets",
+    "stats": {
+      "ppg": 26.5,
+      "rpg": 12.1,
+      "apg": 9.4
     }
+  },
+  {
+    "id": "edwards",
+    "name": "Anthony Edwards",
+    "number": "5",
+    "position": "Guard",
+    "team": "Minnesota Timberwolves",
+    "stats": {
+      "ppg": 25.9,
+      "rpg": 5.3,
+      "apg": 4.5
+    }
+  },
+  {
+    "id": "sga",
+    "name": "Shai Gilgeous-Alexander",
+    "number": "2",
+    "position": "Guard",
+    "team": "Oklahoma City Thunder",
+    "stats": {
+      "ppg": 30.3,
+      "rpg": 5.8,
+      "apg": 6.2
+    }
+  },
+  {
+    "id": "grant",
+    "name": "Jerami Grant",
+    "number": "9",
+    "position": "Forward",
+    "team": "Portland Trail Blazers",
+    "stats": {
+      "ppg": 21.3,
+      "rpg": 4.5,
+      "apg": 2.6
+    }
+  },
+  {
+    "id": "markkanen",
+    "name": "Lauri Markkanen",
+    "number": "23",
+    "position": "Forward",
+    "team": "Utah Jazz",
+    "stats": {
+      "ppg": 23.1,
+      "rpg": 8.2,
+      "apg": 2.0
+    }
+  },
+
+  {
+    "id": "curry",
+    "name": "Stephen Curry",
+    "number": "30",
+    "position": "Guard",
+    "team": "Golden State Warriors",
+    "stats": {
+      "ppg": 29.4,
+      "rpg": 5.1,
+      "apg": 6.3
+    },
+    "href": "player-curry.html"
+  },
+  {
+    "id": "kawhi",
+    "name": "Kawhi Leonard",
+    "number": "2",
+    "position": "Forward",
+    "team": "LA Clippers",
+    "stats": {
+      "ppg": 25.1,
+      "rpg": 6.2,
+      "apg": 3.8
+    }
+  },
+  {
+    "id": "lebron",
+    "name": "LeBron James",
+    "number": "23",
+    "position": "Forward",
+    "team": "Los Angeles Lakers",
+    "stats": {
+      "ppg": 25.7,
+      "rpg": 7.3,
+      "apg": 7.5
+    },
+    "href": "player-lebron.html"
+  },
+  {
+    "id": "booker",
+    "name": "Devin Booker",
+    "number": "1",
+    "position": "Guard",
+    "team": "Phoenix Suns",
+    "stats": {
+      "ppg": 27.1,
+      "rpg": 6.7,
+      "apg": 5.0
+    },
+    "href": "player-durant.html"
+  },
+  {
+    "id": "zach",
+    "name": "Zach LaVine",
+    "number": "8",
+    "position": "Guard",
+    "team": "Sacramento Kings",
+    "stats": {
+      "ppg": 25.0,
+      "rpg": 4.3,
+      "apg": 6.1
+    }
+  },
+
+  {
+    "id": "luka",
+    "name": "Luka Doncic",
+    "number": "77",
+    "position": "Guard",
+    "team": "Dallas Mavericks",
+    "stats": {
+      "ppg": 32.4,
+      "rpg": 8.7,
+      "apg": 8.2
+    }
+  },
+  {
+    "id": "sengun",
+    "name": "Alperen Sengun",
+    "number": "28",
+    "position": "Center",
+    "team": "Houston Rockets",
+    "stats": {
+      "ppg": 21.2,
+      "rpg": 9.3,
+      "apg": 4.8
+    }
+  },
+  {
+    "id": "morant",
+    "name": "Ja Morant",
+    "number": "12",
+    "position": "Guard",
+    "team": "Memphis Grizzlies",
+    "stats": {
+      "ppg": 26.2,
+      "rpg": 5.9,
+      "apg": 7.1
+    }
+  },
+  {
+    "id": "zion",
+    "name": "Zion Williamson",
+    "number": "1",
+    "position": "Forward",
+    "team": "New Orleans Pelicans",
+    "stats": {
+      "ppg": 23.9,
+      "rpg": 6.7,
+      "apg": 4.0
+    }
+  },
+  {
+    "id": "wembanyama",
+    "name": "Victor Wembanyama",
+    "number": "1",
+    "position": "Center",
+    "team": "San Antonio Spurs",
+    "stats": {
+      "ppg": 20.5,
+      "rpg": 10.1,
+      "apg": 3.0
+    }
+  }
 ]
-  

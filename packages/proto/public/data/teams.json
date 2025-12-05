@@ -1,30 +1,125 @@
 [
-    {
-      "id": "lakers",
-      "name": "Los Angeles Lakers",
-      "conference": "Western Conference",
-      "wins": 28,
-      "losses": 15,
-      "players": ["LeBron James", "Anthony Davis", "Austin Reaves"],
-      "href": "team-lakers.html"
-    },
-    {
-      "id": "warriors",
-      "name": "Golden State Warriors",
-      "conference": "Western Conference",
-      "wins": 25,
-      "losses": 18,
-      "players": ["Stephen Curry", "Klay Thompson", "Draymond Green"],
-      "href": "team-warriors.html"
-    },
-    {
-      "id": "suns",
-      "name": "Phoenix Suns",
-      "conference": "Western Conference",
-      "wins": 30,
-      "losses": 13,
-      "players": ["Kevin Durant", "Devin Booker", "Bradley Beal"],
-      "href": "team-suns.html"
-    }
-  ]
-  
+  {
+    "id": "nuggets",
+    "name": "Denver Nuggets",
+    "conference": "Western Conference • Northwest",
+    "wins": 32,
+    "losses": 14,
+    "players": ["Nikola Jokic", "Jamal Murray", "Michael Porter Jr."]
+  },
+  {
+    "id": "timberwolves",
+    "name": "Minnesota Timberwolves",
+    "conference": "Western Conference • Northwest",
+    "wins": 30,
+    "losses": 16,
+    "players": ["Anthony Edwards", "Karl-Anthony Towns", "Rudy Gobert"]
+  },
+  {
+    "id": "thunder",
+    "name": "Oklahoma City Thunder",
+    "conference": "Western Conference • Northwest",
+    "wins": 29,
+    "losses": 17,
+    "players": ["Shai Gilgeous-Alexander", "Chet Holmgren", "Jalen Williams"]
+  },
+  {
+    "id": "blazers",
+    "name": "Portland Trail Blazers",
+    "conference": "Western Conference • Northwest",
+    "wins": 18,
+    "losses": 28,
+    "players": ["Anfernee Simons", "Scoot Henderson", "Jerami Grant"]
+  },
+  {
+    "id": "jazz",
+    "name": "Utah Jazz",
+    "conference": "Western Conference • Northwest",
+    "wins": 20,
+    "losses": 26,
+    "players": ["Lauri Markkanen", "Jordan Clarkson", "Collin Sexton"]
+  },
+
+  {
+    "id": "warriors",
+    "name": "Golden State Warriors",
+    "conference": "Western Conference • Pacific",
+    "wins": 27,
+    "losses": 20,
+    "players": ["Stephen Curry", "Klay Thompson", "Draymond Green"]
+  },
+  {
+    "id": "clippers",
+    "name": "LA Clippers",
+    "conference": "Western Conference • Pacific",
+    "wins": 28,
+    "losses": 19,
+    "players": ["Kawhi Leonard", "Paul George", "James Harden"]
+  },
+  {
+    "id": "lakers",
+    "name": "Los Angeles Lakers",
+    "conference": "Western Conference • Pacific",
+    "wins": 28,
+    "losses": 15,
+    "players": ["LeBron James", "Anthony Davis", "Austin Reaves"],
+    "href": "team-lakers.html"
+  },
+  {
+    "id": "suns",
+    "name": "Phoenix Suns",
+    "conference": "Western Conference • Pacific",
+    "wins": 26,
+    "losses": 21,
+    "players": ["Devin Booker", "Mark Williams", "Bradley Beal"]
+  },
+  {
+    "id": "kings",
+    "name": "Sacramento Kings",
+    "conference": "Western Conference • Pacific",
+    "wins": 27,
+    "losses": 20,
+    "players": ["Zach LaVine", "Domantas Sabonis", "Keegan Murray"]
+  },
+
+  {
+    "id": "mavericks",
+    "name": "Dallas Mavericks",
+    "conference": "Western Conference • Southwest",
+    "wins": 27,
+    "losses": 20,
+    "players": ["Luka Doncic", "Kyrie Irving", "Tim Hardaway Jr."]
+  },
+  {
+    "id": "rockets",
+    "name": "Houston Rockets",
+    "conference": "Western Conference • Southwest",
+    "wins": 21,
+    "losses": 25,
+    "players": ["Jalen Green", "Alperen Sengun", "Fred VanVleet"]
+  },
+  {
+    "id": "grizzlies",
+    "name": "Memphis Grizzlies",
+    "conference": "Western Conference • Southwest",
+    "wins": 22,
+    "losses": 24,
+    "players": ["Ja Morant", "Jaren Jackson Jr.", "Desmond Bane"]
+  },
+  {
+    "id": "pelicans",
+    "name": "New Orleans Pelicans",
+    "conference": "Western Conference • Southwest",
+    "wins": 25,
+    "losses": 22,
+    "players": ["Zion Williamson", "Brandon Ingram", "CJ McCollum"]
+  },
+  {
+    "id": "spurs",
+    "name": "San Antonio Spurs",
+    "conference": "Western Conference • Southwest",
+    "wins": 10,
+    "losses": 37,
+    "players": ["Victor Wembanyama", "Devin Vassell", "De'Aaron Fox"]
+  }
+]
