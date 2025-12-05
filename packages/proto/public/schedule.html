@@ -42,96 +42,21 @@
       <img src="assets/scoreboard.svg" alt="Schedule" style="width: 3rem; height: 3rem;">
       <div>
         <h1>SCHEDULE</h1>
-        <p style="color: var(--muted-foreground); font-size: 1.125rem;">NBA game schedule and results</p>
+        <p style="color: var(--muted-foreground); font-size: 1.125rem;">
+          NBA game schedule and results
+        </p>
       </div>
     </header>
 
-    <section>
-      <a href="game-1.html">
-        <article class="card schedule-card-custom">
-          <header class="game-header">
-            <div>
-              <div style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 0.25rem;">January 15, 2025 • 7:30 PM</div>
-              <div style="font-size: 0.75rem; color: var(--muted-foreground);">Crypto.com Arena</div>
-            </div>
-            <span class="game-status status-final">Final</span>
-          </header>
-          
-          <div class="game-matchup">
-            <div class="team-info">
-              <div class="team-name">Golden State Warriors</div>
-              <div class="team-label">Away</div>
-            </div>
-            
-            <div style="display: flex; gap: 2rem; padding: 0 2rem;">
-              <div class="game-score">108</div>
-              <div style="font-family: var(--font-display); font-size: 2.5rem; color: var(--muted-foreground);">-</div>
-              <div class="game-score">112</div>
-            </div>
-            
-            <div class="team-info" style="text-align: right;">
-              <div class="team-name">Los Angeles Lakers</div>
-              <div class="team-label">Home</div>
-            </div>
-          </div>
-        </article>
-      </a>
-
-      <a href="game-2.html">
-        <article class="card schedule-card-custom">
-          <header class="game-header">
-            <div>
-              <div style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 0.25rem;">January 12, 2025 • 8:00 PM</div>
-              <div style="font-size: 0.75rem; color: var(--muted-foreground);">Footprint Center</div>
-            </div>
-            <span class="game-status status-final">Final</span>
-          </header>
-          
-          <div class="game-matchup">
-            <div class="team-info">
-              <div class="team-name">Los Angeles Lakers</div>
-              <div class="team-label">Away</div>
-            </div>
-            
-            <div style="display: flex; gap: 2rem; padding: 0 2rem;">
-              <div class="game-score">115</div>
-              <div style="font-family: var(--font-display); font-size: 2.5rem; color: var(--muted-foreground);">-</div>
-              <div class="game-score">105</div>
-            </div>
-            
-            <div class="team-info" style="text-align: right;">
-              <div class="team-name">Phoenix Suns</div>
-              <div class="team-label">Home</div>
-            </div>
-          </div>
-        </article>
-      </a>
-
-      <article class="card schedule-card-custom">
-        <header class="game-header">
-          <div>
-            <div style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 0.25rem;">January 18, 2025 • 7:00 PM</div>
-            <div style="font-size: 0.75rem; color: var(--muted-foreground);">Chase Center</div>
-          </div>
-          <span class="game-status status-upcoming">Upcoming</span>
-        </header>
-        
-        <div class="game-matchup">
-          <div class="team-info">
-            <div class="team-name">Phoenix Suns</div>
-            <div class="team-label">Away</div>
-          </div>
-          
-          <div class="game-vs">VS</div>
-          
-          <div class="team-info" style="text-align: right;">
-            <div class="team-name">Golden State Warriors</div>
-            <div class="team-label">Home</div>
-          </div>
-        </div>
-      </article>
+    <!-- dynamic container -->
+    <section id="schedule-list">
+      <p style="color: var(--muted-foreground);">
+        Loading schedule...
+      </p>
     </section>
   </main>
+
   <script type="module" src="./scripts/theme.js"></script>
+  <script type="module" src="./scripts/render-schedule.js"></script>
 </body>
 </html>

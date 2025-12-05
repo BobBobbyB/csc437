@@ -1,45 +1,44 @@
 async function renderSchedule() {
     try {
-      const res = await fetch('./data/games.json');
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const games = await res.json();
+        const res = await fetch("./data/games.json");
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const games = await res.json();
   
-      const container = document.getElementById('schedule-list');
-      if (!container) return;
+        const container = document.getElementById("schedule-list");
+        if (!container) return;
   
-      container.innerHTML = '';
+        container.innerHTML = "";
   
-      games.forEach(game => {
-        const isFinal =
-          (game.status || '').toLowerCase() === 'final';
+        games.forEach((game) => {
+        const isFinal = (game.status || "").toLowerCase() === "final";
   
-        const article = document.createElement('article');
-        article.className = 'card';
+        const article = document.createElement("article");
+        // keep both classes so CSS hover still works
+        article.className = "card schedule-card-custom";
   
-        // header (date + location + status pill)
         article.innerHTML = `
-          <header class="game-header">
+        <header class="game-header">
             <div>
-              <div style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 0.25rem;">
-                ${game.date}
-              </div>
-              <div style="font-size: 0.75rem; color: var(--muted-foreground);">
-                ${game.location ?? ''}
-              </div>
+                <div style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 0.25rem;">
+                    ${game.date}
+                </div>
+                <div style="font-size: 0.75rem; color: var(--muted-foreground);">
+                    ${game.location ?? ""}
+                </div>
             </div>
-            <span class="game-status ${isFinal ? 'status-final' : 'status-upcoming'}">
+            <span class="game-status ${isFinal ? "status-final" : "status-upcoming"}">
               ${game.status}
             </span>
-          </header>
+        </header>
   
-          <div class="game-matchup">
+            <div class="game-matchup">
             <div class="team-info">
-              <div class="team-name">${game.awayTeam}</div>
-              <div class="team-label">Away</div>
+                <div class="team-name">${game.awayTeam}</div>
+                <div class="team-label">Away</div>
             </div>
   
             ${
-              isFinal
+                isFinal
                 ? `
                 <div style="display: flex; gap: 2rem; padding: 0 2rem;">
                   <div class="game-score">${game.awayScore}</div>
@@ -56,32 +55,34 @@ async function renderSchedule() {
               <div class="team-name">${game.homeTeam}</div>
               <div class="team-label">Home</div>
             </div>
-          </div>
-        `;
+        </div>
+    `;
   
-        // wrap in link if href exists
+        // wrap in link if href exists (same behavior as before)
         if (game.href) {
-          const link = document.createElement('a');
+          const link = document.createElement("a");
           link.href = game.href;
           link.appendChild(article);
           container.appendChild(link);
         } else {
           container.appendChild(article);
         }
-      });
-    } catch (err) {
-      console.error('Failed to load schedule:', err);
-      const container = document.getElementById('schedule-list');
-      if (container) {
-        container.innerHTML =
-          '<p style="color: var(--muted-foreground);">Failed to load schedule. Please try again.</p>';
-      }
+    });
+    } 
+    catch (err) {
+        console.error("Failed to load schedule:", err);
+        const container = document.getElementById("schedule-list");
+            if (container) {
+                container.innerHTML =
+                '<p style="color: var(--muted-foreground);">Failed to load schedule. Please try again.</p>';
+            }
+        }
     }
-  }
   
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', renderSchedule);
-  } else {
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", renderSchedule);
+} 
+else {
     renderSchedule();
-  }
+}
   
